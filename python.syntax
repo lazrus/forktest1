@@ -1,0 +1,15 @@
+"(None|return|if|else|elif|True|False|for|while|in|range|len|pass) ": special
+"(?<=def ).*(?=\()": functionName
+"def": def
+"class": class
+"print(?=\()": print
+"[0-9]+": int
+"[0-9]*\.[0-9]+|[0-9]+\.[0-9]*": float
+"self": self
+"(?<=class )[^\(\:]*": className
+"from|import": import
+"\=|\+|\-|\>|\<|\*|\/": operator
+"\".*\"": string1
+"\'.*\'": string2
+"#.*(?=\n)": comment
+"\"\"\".*?\"\"\"": multiLineComment
