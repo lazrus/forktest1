@@ -13,3 +13,4 @@
 "\'.*\'": string2
 "#.*(?=\n)": comment
 "\"\"\".*?\"\"\"": multiLineComment
+"\bfucnton\b": functioncall
