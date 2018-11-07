@@ -1,7 +1,7 @@
 import re
 import sys
 
-
+#nothering more to be done
 def loadFile(fileName) :
 	"""
 	Reads a file and returns a list of the lines as strings.
