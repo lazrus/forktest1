@@ -14,6 +14,7 @@ def readSyntax(filename, regexList):
 		name = "".join(re.findall('": .+$', x))[3:]		
 		regexList.append((name, search))
 	syntaxfile.close()
+	return syntaxfile
 
 def readTheme(filename, colorList):
 	"""
@@ -76,6 +77,7 @@ if __name__ == "__main__":
 	"""
 	if len(sys.argv) < 4:
 		print ("USAGE: \n\t-> pyhton highlighter.py [syntaxfile] [themefile] [sourcefile_to_color]\n")
+	syntax=read_syntax(python_synax)
 	elif len(sys.argv) > 4:
 		print ("USAGE: \n\t-> pyhton highlighter.py [syntaxfile] [themefile] [sourcefile_to_color]\n")
 	else:
